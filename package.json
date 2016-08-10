@@ -1,0 +1,23 @@
+{
+  "name": "riemann-js",
+  "version": "0.0.2",
+  "description": "",
+  "main": "riemann.js",
+     "scripts": {
+    "lint": "find . -name '*.js' -and -not -path './node_modules/*' | xargs ./node_modules/.bin/jshint --config ./.jshint",
+    "test": "NODE_PATH=./ mocha --ui tdd --reporter list --timeout 2000 --slow 5000"
+     },
+  "author": "Prasanna Gautam",
+    "license": "MIT",
+     "devDependencies": {
+    "mocha": "*",
+    "jshint": "*"
+     },
+      "repository": {
+    "type": "git",
+    "url": "git://github.com/prasincs/riemann-js.git"
+  },
+  "dependencies": {
+    "protobufjs": "^5.0.1"
+  }
+}
